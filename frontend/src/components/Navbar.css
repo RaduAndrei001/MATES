@@ -1,0 +1,112 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  padding: 0 20px; /* marginile orizontale */
+  color: var(--text-color);
+  z-index: 1000;
+}
+
+/* nav-left si nav-right separate */
+.nav-left {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-right {
+  margin-left: auto; /* se duce în dreapta */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Linkurile */
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 4px;
+  line-height: 60px; /* centrează textul vertical */
+}
+
+/* Eliminăm underline la hover */
+.nav-link:hover {
+  text-decoration: none;
+}
+
+/* Link ACTIV => bară albastră doar sub link, fără underline alb */
+.nav-link.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Secțiunea user logat */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-name {
+  cursor: pointer;
+  line-height: 60px;
+}
+
+.user-name:hover {
+  font-weight: 900; /* devine mai bold la hover */
+}
+
+/* Butoane */
+.logout-btn,
+.sign-button {
+  background-color: var(--success-bg);
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.logout-btn:hover,
+.sign-button:hover {
+  background-color: var(--success-bg-hover);
+}
+
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover; 
+}
+
+/* --- brand / logo text --- */
+.brand-link {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 5px;   /* distanță față de Store */
+  line-height: 60px;    /* vertical align */
+  position: relative;   /* pt. coerență cu nav-link, chiar dacă nu folosim ::after */
+}
+
+/* fără underline la hover */
+.brand-link:hover {
+  text-decoration: none;
+}
+
+/* chiar dacă React Router pune clasa 'active', nu desenăm bara */
+.brand-link.active::after {
+  display: none;
+}

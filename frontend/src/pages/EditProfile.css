@@ -1,0 +1,60 @@
+.edit-profile-container {
+  width: 600px;
+  margin: auto;
+  background-color: var(--header-bg);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--shadow-color);
+  color: var(--secondary-text-color);
+  font-family: Arial, sans-serif;
+}
+
+.edit-profile-container h2 {
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: var(--primary-bg);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+}
+
+.checkmark {
+  visibility: hidden;
+  color: var(--border-color);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: var(--border-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: var(--hover-border);
+}

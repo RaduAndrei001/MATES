@@ -1,0 +1,138 @@
+   .mpm-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0 0 0 / 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .mpm-container {
+    width: 340px;
+    background: radial-gradient(circle at top, #1d1d1d, #000 80%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 16px 20px 24px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .mpm-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .mpm-icon-btn {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .mpm-toggle {
+    background: #2c2c2c;
+    border-radius: 9999px;
+    padding: 2px;
+  }
+
+  .mpm-toggle button {
+    background: none;
+    border: none;
+    color: #bbb;
+    padding: 4px 14px;
+    border-radius: 9999px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .mpm-toggle button.active {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .mpm-album-art {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 18px;
+  }
+  
+  .mpm-url-input {
+    width: 100%;
+    padding: 10px 12px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .mpm-loader {
+    text-align: center;
+    padding: 40px 0 60px;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .mpm-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -4px;
+  }
+  
+  .mpm-artists {
+    color: #9b9b9b;
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+  
+  .mpm-slider {
+    width: 100%;
+    accent-color: #fff;
+  }
+  
+  .mpm-time-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 4px;
+    margin-bottom: 18px;
+  }
+  
+  .mpm-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .mpm-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mpm-controls .play {
+    font-size: 28px;
+  }
+  
+  .mpm-menu{
+    position:absolute;
+    top:34px;
+    right:0;
+    background:#2c2c2c;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    white-space:nowrap;
+  }
+  
+  .mpm-menu:hover{background:#3a3a3a;}

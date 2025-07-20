@@ -1,0 +1,111 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-window {
+  background-color: var(--header-bg);
+  width: 400px;
+  padding: 24px 28px;
+  border-radius: 8px;
+  position: relative;
+  color: var(--secondary-text-color);
+  box-shadow: 0 4px 18px var(--shadow-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  background: none;
+  border: none;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--text-color); /* ușor highlight, dar fără background */
+}
+
+.modal-window h2 {
+  margin-top: 0;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--hover-border);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-bg);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.submit-btn:hover {
+  background-color: var(--hover-border);
+}
+
+.switch-mode {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch-mode span {
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.switch-mode span:hover {
+  color: var(--hover-border);
+}
+

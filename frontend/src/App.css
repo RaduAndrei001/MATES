@@ -1,0 +1,101 @@
+
+.default-theme {
+  --primary-bg: #1b2838;
+  --secondary-bg: #171a21;
+  --accent-color: #1a9fff;
+  --text-color: #ffffff;
+  --secondary-text-color: #c7d5e0;
+  --header-bg: #2a475e;
+  --highlight-bg: #3b4a5a;
+  --hover-bg: #3b6a8a;
+  --border-color: #66c0f4;
+  --hover-border: #4a90d9;
+  --success-bg: #5c7e10;
+  --success-bg-hover: #4a6a0a;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Light */
+.light-theme {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f5f7fa;
+  --accent-color: #007be8;
+  --text-color: #1c1c1c;
+  --secondary-text-color: #4a4a4a;
+  --header-bg: #e6e9ec;
+  --highlight-bg: #e0e7ff;
+  --hover-bg: #d0d7e1;
+  --border-color: #007be8;
+  --hover-border: #0a84ff;
+  --success-bg: #2e7d32;
+  --success-bg-hover: #27652a;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Ocean */
+.ocean-theme {
+  --primary-bg: #0f3d3e;
+  --secondary-bg: #165e60;
+  --accent-color: #1cd9d2;
+  --text-color: #ffffff;
+  --secondary-text-color: #c7dfe0;
+  --header-bg: #1b4b4b;
+  --highlight-bg: #147172;
+  --hover-bg: #248b8d;
+  --border-color: #1cd9d2;
+  --hover-border: #00ece4;
+  --success-bg: #2e7d32;
+  --success-bg-hover: #27652a;
+  --shadow-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Forest */
+.forest-theme {
+  --primary-bg: #243b2e;
+  --secondary-bg: #304d3f;
+  --accent-color: #6cad37;
+  --text-color: #ffffff;
+  --secondary-text-color: #c7d5c4;
+  --header-bg: #2a3f34;
+  --highlight-bg: #2f503d;
+  --hover-bg: #3a5c46;
+  --border-color: #6cad37;
+  --hover-border: #8ad65b;
+  --success-bg: #2e7d32;
+  --success-bg-hover: #27652a;
+  --shadow-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Pastel */
+.pastel-theme {
+  --primary-bg: #fffafa;
+  --secondary-bg: #fff0f0;
+  --accent-color: #ff7d7d;
+  --text-color: #333333;
+  --secondary-text-color: #555555;
+  --header-bg: #ffd6d6;
+  --highlight-bg: #ffe0e0;
+  --hover-bg: #ffcccc;
+  --border-color: #ff7d7d;
+  --hover-border: #ff9a9a;
+  --success-bg: #6cad37;
+  --success-bg-hover: #5a9a2f;
+  --shadow-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Midnight */
+.midnight-theme {
+  --primary-bg: #121212;
+  --secondary-bg: #1c1c1c;
+  --accent-color: #bb86fc;
+  --text-color: #ffffff;
+  --secondary-text-color: #c7d5e0;
+  --header-bg: #272727;
+  --highlight-bg: #1b1b1b;
+  --hover-bg: #2a2a2a;
+  --border-color: #bb86fc;
+  --hover-border: #cf9fff;
+  --success-bg: #2e7d32;
+  --success-bg-hover: #27652a;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}

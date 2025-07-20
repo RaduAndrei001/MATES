@@ -1,0 +1,137 @@
+.library-body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Container flex pentru sidebar și conținut */
+.library-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background-color: var(--header-bg);
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar p {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar p:hover {
+  background-color: var(--hover-bg);
+  border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg); /* use theme header color */
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.search-bar {
+  flex: 1;                 
+  max-width: 450px;
+  padding: 8px 12px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.search-bar::placeholder {
+  color: var(--secondary-text-color);
+  opacity: 0.85;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--hover-border);
+}
+
+
+/* GAME LIST */
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.game {
+  background-color: var(--hover-bg);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 180px;
+  border: 5px solid transparent;
+  position: relative;
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+.game img {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* CONTEXT MENU */
+.context-menu {
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--header-bg);
+  border: 1px solid #ffffff; 
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: var(--hover-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.context-menu button:hover {
+  background-color: #5a9ac5; 
+}
